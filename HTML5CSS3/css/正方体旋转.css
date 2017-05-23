@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.comsic-cube .bg{
+    background-image: url(../images/XYZ/circle.jpg);
+    width: 700px;
+    height: 548px;
+    position: absolute;
+     top: 50%;
+    margin-top: -350px;
+    left: 50%;
+    margin-left: -274px;
+}
+.comsic-cube{
+    background-color: #000;
+    height: 100vh;/*相当于百分比*/
+    display: flex;/*弹性布局*/
+    align-items: center;
+    justify-content: center;  
+}
+
+.comsic-cube .cube{
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    left: 50%;
+    margin-left: -40px;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    transform-style: preserve-3d; /*保留子元素3D属性*/
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    animation: cube 5s infinite linear;/*动画时间 动画次数 曲线速度*/
+}
+.comsic-cube .cube div{
+    width: 80px;
+    height: 80px;
+    border: 3px solid aqua;
+    box-shadow: 0 0 80px rgb(110, 255, 0);/*阴影发光效果*/
+    position: absolute;
+    color: aquamarine;
+    font-size: 45px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 80px;
+    text-shadow: 0 0 30px red;
+    font-family: 华文行楷
+}
+.comsic-cube .cube div img{
+    width: 75px;
+    height: 75px;
+}
+.comsic-cube .cube div:nth-of-type(1){
+    transform: translateY(-40px) rotateX(90deg);
+}
+.comsic-cube .cube div:nth-of-type(2){
+    transform: translateY(40px) rotateX(90deg);
+}
+.comsic-cube .cube div:nth-of-type(3){
+    transform: translateX(-40px) rotateY(90deg);
+}
+.comsic-cube .cube div:nth-of-type(4){
+    transform: translateX(40px) rotateY(90deg);
+}
+.comsic-cube .cube div:nth-of-type(5){
+    transform: translateZ(40px);
+}
+.comsic-cube .cube div:nth-of-type(6){
+    transform: translateZ(-40px);
+}
+@Keyframes cube{/*动画效果*/
+    100%{
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg)
+    }
+}

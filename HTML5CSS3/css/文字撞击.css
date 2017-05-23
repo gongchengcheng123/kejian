@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@keyframes shark{
+    0%{
+      margin: 0;  
+    }
+    10%{
+        margin: -40px 0 0 -40px;
+    }
+    20%{
+        margin: -40px -40px 0 0;
+    }
+    30%{
+        margin: 0 -40px -40px 0;
+    }
+    40%{
+        margin: 0 0 -40px -40px;
+    }
+    50%{
+        margin: 0 0 -40px -40px; 
+    }
+    60%{
+        margin: -15px 0 0 -15px;
+    }
+    70%{
+        margin: -15px -15px 0 0;
+    }
+    80%{
+        margin: 0 -15px -15px 0;
+    }
+    90%{
+        margin: 0 0 -15px -15px;
+    }
+}
+html{
+/*    animation: bianju 10s;*/
+    overflow-x: hidden;
+}
+#banner{
+    background: url("../images/pic/bg1.jpg") no-repeat center;
+    height: 500px;
+    background-color: black;
+    
+}
+#banner .center{
+    padding: 100px 0;
+}
+#banner .title{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 0 0 30px #9d00ff;
+    font-family: 华文行楷
+}
+#banner .title p{
+    margin-bottom: 20px;
+}
+#banner .text{
+    margin: auto;
+    position: relative;
+    height: 72px;
+    margin-bottom: 20px;
+    opacity: 0;
+}
+#banner .text div{
+    width: 200px;
+    height: 72px;
+    background-image: url("../images/pic/text_left.png");
+    position: absolute;
+}
+#banner .text div:nth-of-type(2){
+    background-image: url("../images/pic/text_right.png");
+   right: 0;
+}
+#banner .btn{
+    text-align: center;
+}
+#banner .btn a{
+    color: #fff;
+    text-decoration: none;
+    background-color: #7fb8ff;
+    display: inline-block;
+    width: 100px;
+    padding: 10px 0;
+    margin: 15px;
+    border-radius: 23px 10px 23px 10px;
+    text-shadow: 0 0 30px #a9ff00;
+    font-size: 17px;
+    font-family: 华文行楷
+}
+#banner .btn a{
+    animation: color 3s infinite;
+}
+@keyframes color{
+    0%{
+        background-color: aqua;
+    }
+     50%{
+        background-color: coral;
+    }
+     100%{
+        background-color: aquamarine;
+    }
+}

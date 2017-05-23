@@ -1,0 +1,113 @@
+html{
+    height: 1000px;
+    background-color: black;
+    overflow-x: hidden;
+}
+.ban{
+    background-image: url(../images/blackhole.png);
+    width: 800px;
+    height: 800px;
+    transform-style: preserve-3d;
+    animation: cube 10s infinite linear; 
+    position:relative;
+    width: 750px;
+    margin: 0 auto;
+}
+.wenzi{
+    color: white;
+    font-weight: 900;
+    height: 0;
+}
+.wenzi .ruxue h1{
+    width: 131px;
+    margin: auto;
+}
+.wenzi .ruxue{
+    width: 415px;
+    margin: auto;
+}
+.wenzi .ruxue div{
+    margin-top: 50px;
+}
+.wenzi h2{
+    font-size: 25px;
+    font-weight: 900;
+    margin: 0;
+}
+.wenzi .one{
+    position: relative;
+    top:202px;
+    left: 520px;
+    z-index: 1;
+}
+.wenzi .one div{
+    width: 100px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    line-height: 22px;
+}
+.wenzi .one span{
+    font-size: 50px;
+}
+
+.wenzi .two{
+    position: relative;
+    top: -90px;
+    left: 700px;
+    z-index: 1;
+}
+.wenzi .two h2{
+    margin-bottom: 5px;
+}
+.wenzi .two span{
+    font-size: 50px;
+    margin-right: 15px;
+}
+.wenzi .two .q div{
+    width: 168px;
+    line-height: 22px;
+}
+
+.wenzi .three{
+    position: relative;
+    top: -30px;
+    left: 920px;
+    z-index: 1;
+}
+.wenzi .three span{
+    font-size: 50px;
+}
+.wenzi .three div{
+    width: 132px;
+    line-height: 22px;
+    margin-top: 5px;
+}
+.wenzi .three h2{
+    margin-top:5px;;
+}
+
+
+
+.wenzi .four{
+    position: relative;
+    top: 59px;
+    left: 720px;
+    z-index: 1;
+}
+.wenzi .four span{
+    font-size: 50px;
+}
+.wenzi .four .w{
+    margin-right: 15px;
+}
+.wenzi .four .w div{
+    width: 87px;
+    line-height: 22px;
+    margin-top: 5px;
+}
+
+@Keyframes cube{
+    100%{
+        transform:rotateZ(360deg);
+    }
+}
